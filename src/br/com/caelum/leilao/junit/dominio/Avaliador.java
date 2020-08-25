@@ -1,4 +1,4 @@
-package br.com.caelum.leilao.dominio;
+package br.com.caelum.leilao.junit.dominio;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -12,6 +12,10 @@ public class Avaliador {
     private List<Lance> maiores;
 
     public void avalia (Leilao leilao) {
+        if(leilao.getLances().isEmpty()){
+            throw new RuntimeException("Não há lances a serem avaliados");
+        }
+
         for(Lance lance: leilao.getLances()){
             if(lance.getValor() > maiorLance) {
                 maiorLance = lance.getValor();

@@ -8,6 +8,7 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="jdk" jdkName="J2SE-1.5" jdkType="JavaSDK" />
-    <orderEntry type="library" name="junit:junit:4.13" level="project" />
+    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter:5.4.2" level="project" />
+    <orderEntry type="library" name="org.hamcrest:hamcrest:2.2" level="project" />
   </component>
 </module>
